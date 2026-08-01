@@ -1,0 +1,527 @@
+/* ================================================
+   Med-Reasoner CVPR 2026 Workshop Website Styles
+   ================================================ */
+
+/* Base Styles */
+:root {
+    --primary-color: #0d6efd;
+    --primary-dark: #0b5ed7;
+    --secondary-color: #6c757d;
+    --accent-color: #198754;
+    --text-color: #212529;
+    --light-bg: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: var(--text-color);
+    line-height: 1.7;
+    padding-top: 56px;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav-link {
+    font-weight: 400;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(13, 110, 253, 0.5), rgba(11, 94, 215, 0.6)), url('../../hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 80px 0 60px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-section h2.lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+    opacity: 0.95;
+    margin-bottom: 1rem;
+}
+
+.hero-date {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.hero-small {
+    padding: 60px 0 40px;
+}
+
+.hero-small h1 {
+    font-size: 2rem;
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* Person Cards (Speakers & Organizers) */
+.person-card {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    background: white;
+}
+
+.person-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.15);
+    border-color: rgba(13, 110, 253, 0.3);
+}
+
+.card-img-container {
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-card .card-img-top {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-card .card-body {
+    padding: 1rem;
+}
+
+.person-card .card-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-color);
+}
+
+.person-card .card-text {
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+/* Links in Person Cards */
+a.person-card {
+    display: block;
+}
+
+a.person-card:hover .card-title {
+    color: var(--primary-color);
+}
+
+/* News Table */
+.news-table {
+    margin-bottom: 0;
+}
+
+.news-table td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+}
+
+.news-date {
+    font-weight: 500;
+    white-space: nowrap;
+    width: 150px;
+    color: var(--secondary-color);
+}
+
+/* Topics Section */
+.topic-category {
+    font-weight: 600;
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}
+
+.topic-list {
+    padding-left: 1.5rem;
+}
+
+.topic-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Dates Table */
+.dates-table {
+    max-width: 600px;
+}
+
+.dates-table td {
+    padding: 1rem;
+}
+
+.date-label {
+    width: 200px;
+    background: var(--light-bg);
+}
+
+.date-value {
+    font-weight: 500;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    margin-top: 3rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0 40px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-section h2.lead {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .person-card .card-img-top {
+        width: 100px;
+        height: 100px;
+    }
+
+    .news-date {
+        width: auto;
+    }
+
+    .dates-table .date-label {
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.3rem;
+    }
+
+    .person-card .card-img-top {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Utility Classes */
+.lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+/* Placeholder Image Styling */
+.card-img-top[src*="placeholder"] {
+    background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%);
+}
+
+/* Award Cards */
+.award-card {
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+    border: 1px solid rgba(13, 110, 253, 0.15);
+    border-radius: 12px;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.award-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.15);
+}
+
+.award-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.award-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.award-detail {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.award-total {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+/* Sponsor Cards */
+.sponsor-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-logo {
+    max-width: 200px;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+.sponsor-name {
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Schedule Table */
+.schedule-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.schedule-table thead th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    border: none;
+}
+
+.schedule-time-col {
+    width: 200px;
+}
+
+.schedule-time {
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: var(--primary-color);
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.schedule-table tbody tr td {
+    vertical-align: middle;
+    font-size: 0.95rem;
+    border-color: #e9ecef;
+}
+
+.schedule-opening {
+    background-color: #eaf3fb;
+}
+
+.schedule-talk {
+    background-color: #ffffff;
+}
+
+.schedule-talk:hover {
+    background-color: #f0f7ff;
+}
+
+.schedule-break {
+    background-color: #fff8e1;
+}
+
+.schedule-oral {
+    background-color: #f3f0fb;
+}
+
+.schedule-closing {
+    background-color: #e8f5e9;
+}
+
+.schedule-buffer {
+    background-color: #f5f5f5;
+    color: #888;
+}
+
+.oral-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9rem;
+}
+
+.oral-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.oral-list li:last-child {
+    border-bottom: none;
+}
+
+.oral-authors {
+    display: block;
+    color: #6c757d;
+    font-size: 0.85rem;
+    margin-top: 2px;
+}
+
+/* Accepted Papers Table */
+.papers-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    font-size: 0.93rem;
+}
+
+.papers-table thead th {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: none;
+}
+
+.papers-id-col   { width: 110px; }
+.papers-format-col { width: 90px; }
+.papers-authors-col { width: 28%; }
+
+.papers-id {
+    font-size: 0.85rem;
+    color: #6c757d;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.papers-title {
+    font-weight: 600;
+    vertical-align: middle;
+    color: #1a1a2e;
+}
+
+.papers-authors {
+    color: #6c757d;
+    font-size: 0.88rem;
+    vertical-align: middle;
+}
+
+.papers-table tbody tr {
+    border-color: #e9ecef;
+}
+
+.papers-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.badge-invited {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background-color: #e0edff;
+    color: #1a4fa0;
+    border: 1px solid #90b8f8;
+}
+
+.badge-oral {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffc107;
+}
+
+.badge-poster {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    background-color: #e8eaf6;
+    color: #3949ab;
+    border: 1px solid #9fa8da;
+}
