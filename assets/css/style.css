@@ -46,7 +46,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(13, 110, 253, 0.5), rgba(11, 94, 215, 0.6)), url('../../hero.jpg');
+    background: linear-gradient(rgba(13, 110, 253, 0.5), rgba(11, 94, 215, 0.6)), url('../../atlanta.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,39 +73,6 @@ body {
     font-size: 1.2rem;
     opacity: 0.9;
     margin-bottom: 0;
-}
-
-/* Venue Banner */
-.venue-banner {
-    position: relative;
-    width: 100%;
-    max-height: 320px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-}
-
-.venue-img {
-    width: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-}
-
-.venue-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.55));
-    padding: 20px 24px 14px;
-}
-
-.venue-label {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.03em;
 }
 
 .hero-small {
