@@ -75,6 +75,39 @@ body {
     margin-bottom: 0;
 }
 
+/* Venue Banner */
+.venue-banner {
+    position: relative;
+    width: 100%;
+    max-height: 320px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.venue-img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.venue-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.55));
+    padding: 20px 24px 14px;
+}
+
+.venue-label {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
 .hero-small {
     padding: 60px 0 40px;
 }
